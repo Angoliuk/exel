@@ -19,4 +19,5 @@ runs:
       uses: ./.github/workflows/utils/get-pnpm-cache
 
     - name: Install dependencies
+      shell: bash
       runs: pnpm install
