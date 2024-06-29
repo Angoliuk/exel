@@ -20,4 +20,4 @@ runs:
 
     - name: Install dependencies
       shell: bash
-      runs: pnpm install
+      run: pnpm install
