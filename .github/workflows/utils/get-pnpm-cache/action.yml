@@ -2,7 +2,7 @@ name: Get pnpm cache
 description: Getting pnpm cache
 
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - name: Get pnpm path
       shell: bash
@@ -13,4 +13,4 @@ runs:
       name: Setup pnpm cache
       with:
         path: "${{ env.pnpmPath }}"
-        key: ${{ hashFiles('**/pnpm-lock.yaml') }}-${{ env.envHash }}-${{ env.os }}-pnpm-store
+        key: ${{ hashFiles('**/pnpm-lock.yaml') }}-pnpm-store
