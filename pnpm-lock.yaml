@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@tanstack/router-devtools':
-        specifier: ^1.40.0
-        version: 1.40.0(@tanstack/react-router@1.40.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(csstype@3.1.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       firebase:
         specifier: ^10.12.2
         version: 10.12.2
@@ -24,9 +21,6 @@ importers:
         specifier: ^5.1.1
         version: 5.1.1(firebase@10.12.2)(react@18.3.1)
     devDependencies:
-      '@hookform/resolvers':
-        specifier: ^3.4.2
-        version: 3.6.0(react-hook-form@7.52.0(react@18.3.1))
       '@radix-ui/react-avatar':
         specifier: ^1.0.4
         version: 1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -39,6 +33,9 @@ importers:
       '@tanstack/react-router':
         specifier: ^1.20.0
         version: 1.40.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tanstack/router-devtools':
+        specifier: ^1.40.0
+        version: 1.40.0(@tanstack/react-router@1.40.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(csstype@3.1.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/node':
         specifier: ^20.14.9
         version: 20.14.9
@@ -102,9 +99,6 @@ importers:
       prettier-plugin-tailwindcss:
         specifier: 0.5.14
         version: 0.5.14(prettier@3.3.2)
-      react-hook-form:
-        specifier: ^7.51.5
-        version: 7.52.0(react@18.3.1)
       tailwind-merge:
         specifier: ^2.3.0
         version: 2.3.0
@@ -126,9 +120,6 @@ importers:
       vite-tsconfig-paths:
         specifier: ^4.3.1
         version: 4.3.2(typescript@5.5.2)(vite@5.3.1(@types/node@20.14.9))
-      zod:
-        specifier: ^3.23.8
-        version: 3.23.8
 
 packages:
 
@@ -588,11 +579,6 @@ packages:
     resolution: {integrity: sha512-AiXO/bfe9bmxBjxxtYxFAXGZvMaN5s8kO+jBHAJCON8rJoB5YS/D6X7ZNc6XQkuHNmyl4CYaMI1fJ/Gn27RGGw==}
     engines: {node: '>=6'}
     hasBin: true
-
-  '@hookform/resolvers@3.6.0':
-    resolution: {integrity: sha512-UBcpyOX3+RR+dNnqBd0lchXpoL8p4xC21XP8H6Meb8uve5Br1GCnmg0PcBoKKqPKgGu9GHQ/oygcmPrQhetwqw==}
-    peerDependencies:
-      react-hook-form: ^7.0.0
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -2263,12 +2249,6 @@ packages:
       firebase: '>= 9.0.0'
       react: '>= 16.8.0'
 
-  react-hook-form@7.52.0:
-    resolution: {integrity: sha512-mJX506Xc6mirzLsmXUJyqlAI3Kj9Ph2RhplYhUVffeOQSnubK2uVqBFOBJmvKikvbFV91pxVXmDiR+QMF19x6A==}
-    engines: {node: '>=12.22.0'}
-    peerDependencies:
-      react: ^16.8.0 || ^17 || ^18 || ^19
-
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
@@ -2674,9 +2654,6 @@ packages:
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
-
-  zod@3.23.8:
-    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
 
 snapshots:
 
@@ -3242,10 +3219,6 @@ snapshots:
       long: 5.2.3
       protobufjs: 7.3.2
       yargs: 17.7.2
-
-  '@hookform/resolvers@3.6.0(react-hook-form@7.52.0(react@18.3.1))':
-    dependencies:
-      react-hook-form: 7.52.0(react@18.3.1)
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
@@ -4943,10 +4916,6 @@ snapshots:
       firebase: 10.12.2
       react: 18.3.1
 
-  react-hook-form@7.52.0(react@18.3.1):
-    dependencies:
-      react: 18.3.1
-
   react-is@16.13.1: {}
 
   react@18.3.1:
@@ -5412,5 +5381,3 @@ snapshots:
       yargs-parser: 21.1.1
 
   yocto-queue@0.1.0: {}
-
-  zod@3.23.8: {}
