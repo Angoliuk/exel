@@ -28,7 +28,7 @@ export const SignUpContainer: FC = memo(() => {
 
   return (
     <PageWrapper contentWrapperClassName="flex justify-center items-center" isHeaderShown={false}>
-      <Card className="w-[512px]">
+      <Card className="w-10/12 max-w-[512px]">
         <CardHeader>
           <p className="text-center text-white-1000 text-headlineS">Login</p>
         </CardHeader>

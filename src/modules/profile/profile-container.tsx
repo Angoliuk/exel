@@ -20,7 +20,7 @@ export const ProfileContainer: FC = memo(() => {
 
   return (
     <PageWrapper contentWrapperClassName="flex justify-center items-center" isHeaderShown={false}>
-      <Card className="w-[512px]">
+      <Card className="w-10/12 max-w-[512px]">
         <CardHeader className="flex-row items-center justify-center gap-4">
           <Avatar>{!!user.photo && <AvatarImage alt="user avatar" src={user.photo} />}</Avatar>
           <span className="text-center text-white-1000 text-headlineS">{user.name}'s Profile</span>
